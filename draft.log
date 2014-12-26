@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  26 DEC 2014 22:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  27 DEC 2014 00:14
 entering extended mode
 **draft.tex
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.tex"
@@ -285,6 +285,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
+(C:\localtexmf\tex\latex\mathpartir\mathpartir.sty
+Package: mathpartir 2005/12/20 version 1.2.0 Math Paragraph for Typesetting Inf
+erence Rules
+\mpr@andskip=\skip50
+\mpr@lista=\toks27
+\mpr@listb=\toks28
+\mpr@hlist=\box30
+\mpr@vlist=\box31
+\mpr@right=\box32
+)
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
 LaTeX Font Info:    ... okay on input line 122.
@@ -305,18 +315,18 @@ LaTeX Font Info:    ... okay on input line 122.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen122
-\scratchbox=\box30
+\scratchbox=\box33
 \nofMPsegments=\count119
 \nofMParguments=\count120
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count121
 \MPscratchDim=\dimen123
 \MPnumerator=\count122
 \makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks28
+\everyMPtoPDFconversion=\toks30
 )
 \c@lstlisting=\count124
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring OFF on input line 122.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -342,7 +352,8 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 125.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/Nishanth Nagendra/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.m
+ap}
 
 
 ]
@@ -486,6 +497,11 @@ Underfull \hbox (badness 2119) in paragraph at lines 234--237
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -494,7 +510,7 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 [4 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/lattice.jpg>]
 
-LaTeX Warning: Citation `Figure1' on page 5 undefined on input line 244.
+LaTeX Warning: Citation `Figure1' on page 5 undefined on input line 252.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
@@ -502,6 +518,11 @@ Missing character: There is no ó in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no ó in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ≤ in font cmr10!
@@ -536,12 +557,17 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no ó in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--247
-
+Underfull \hbox (badness 1147) in paragraph at lines 254--256
+[]\OT1/cmr/m/n/10 For LVars, the frame prop-erty says that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--247
+Underfull \hbox (badness 1616) in paragraph at lines 254--256
+\OT1/cmr/m/n/10 in-de-pen-dent ef-fects com-mute with each other.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
@@ -552,22 +578,25 @@ Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ù in font cmti10!
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 257--260
+Underfull \hbox (badness 1509) in paragraph at lines 266--269
+\OT1/cmr/m/n/10 a $\OML/cmm/m/it/10 get$ \OT1/cmr/m/n/10 op-er-a-tion out-side 
+would block, or not,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--269
 
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 257--260
+Underfull \hbox (badness 1297) in paragraph at lines 266--269
 \OT1/cmr/bx/it/10 Quiescence through han-dler pools: \OT1/cmr/m/n/10 Event
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 257--260
+Underfull \hbox (badness 2158) in paragraph at lines 266--269
 \OT1/cmr/m/n/10 run-ning. De-tect-ing qui-es-cence is cru-cial for
  []
-
-
-Underfull \vbox (badness 2103) has occurred while \output is active []
 
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
@@ -579,7 +608,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
 
-Underfull \hbox (badness 2626) in paragraph at lines 274--275
+Underfull \hbox (badness 2626) in paragraph at lines 283--284
 []\OT1/cmr/m/n/10 [[]]contains a quasi-deterministic, par-al-lel,
  []
 
@@ -594,12 +623,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 2903) in paragraph at lines 278--280
+Underfull \hbox (badness 2903) in paragraph at lines 287--289
 []\OT1/cmr/m/n/10 Two un-frozen states are or-dered ac-cord-
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 278--280
+Underfull \hbox (badness 1137) in paragraph at lines 287--289
 \OT1/cmr/m/n/10 ing to the application-specific $\OMS/cmsy/m/n/10 v$\OT1/cmr/m/
 n/10 ; that is,
  []
@@ -608,131 +637,130 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 \OT1/cmr/m/n/10 specific lat-tice re-sults in a new lat-tice
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 284--286
+Underfull \hbox (badness 4084) in paragraph at lines 293--295
 $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D[]; \OMS/cmsy/m/n/10 v[]\OML/cmm/m/it/10 ; 
 \OMS/cmsy/m/n/10 ?[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 > []\OT1/cmr/m/n/10 )$.
  $\OMS/cmsy/m/n/10 t[]$ \OT1/cmr/m/n/10 for the lub op-er-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 287--290
+Underfull \hbox (badness 1360) in paragraph at lines 296--299
 \OT1/cmr/m/n/10 The $\OML/cmm/m/it/10 runParThenFreeze$ \OT1/cmr/m/n/10 func-ti
 on in-side LVish
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 287--290
+Underfull \hbox (badness 1389) in paragraph at lines 296--299
 \OT1/cmr/m/n/10 li-brary does this, and thereby guar-an-tees full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
 
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 287--290
+Underfull \hbox (badness 2799) in paragraph at lines 296--299
 \OT1/cmr/bx/it/10 Proof of Quasi de-ter-min-ism for Lvish:
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 298--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 298--305
+Underfull \hbox (badness 1057) in paragraph at lines 307--314
 \OT1/cmr/m/n/10 quasi-determinism, only data struc-ture au-thors
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 298--305
+Underfull \hbox (badness 1028) in paragraph at lines 307--314
 \OT1/cmr/m/n/10 and pro-grams run only in-side the par monad
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 298--305
+Underfull \hbox (badness 2689) in paragraph at lines 307--314
 \OT1/cmr/m/n/10 al-low-ing only Lvish-sanctioned side ef-fects to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 310.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 319.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 310.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 319.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--323
+Underfull \hbox (badness 10000) in paragraph at lines 328--332
 
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 319--323
+Underfull \hbox (badness 1158) in paragraph at lines 328--332
 \OT1/cmr/m/n/10 data struc-ture usu-ally ex-poses op-er-a-tions that
  []
 
 
-LaTeX Warning: Citation `sched' on page 8 undefined on input line 324.
+LaTeX Warning: Citation `sched' on page 8 undefined on input line 333.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 324--326
+Underfull \hbox (badness 2495) in paragraph at lines 333--335
 \OT1/cmr/m/n/10 Internally par monad rep-re-sents com-pu-ta-tions
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 361--364
+Underfull \hbox (badness 10000) in paragraph at lines 370--373
 
  []
 
+<Figures/speedup.jpg, id=132, 505.89pt x 298.86656pt>
+File: Figures/speedup.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 2165) in paragraph at lines 370--375
+<use Figures/speedup.jpg>
+Package pdftex.def Info: Figures/speedup.jpg used on input line 386.
+(pdftex.def)             Requested size: 222.0pt x 131.15509pt.
+
+Underfull \hbox (badness 2165) in paragraph at lines 379--390
 \OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vide a hi-er-ar-chy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--375
+Underfull \hbox (badness 10000) in paragraph at lines 379--390
 
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 370--375
+Underfull \hbox (badness 1668) in paragraph at lines 379--390
 \OT1/cmr/m/n/10 con-sis-tency is a pol-icy in which the up-dates
  []
 
-[9] <Figures/speedup.jpg, id=161, 619.56468pt x 395.22656pt>
-File: Figures/speedup.jpg Graphic file (type jpg)
-
-<use Figures/speedup.jpg>
-Package pdftex.def Info: Figures/speedup.jpg used on input line 380.
-(pdftex.def)             Requested size: 288.60068pt x 184.09807pt.
-
-("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.bbl"
+[9] ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.bbl"
 Underfull \hbox (badness 1642) in paragraph at lines 15--19
 \OT1/cmr/m/n/10 New-ton R.  Freeze af-ter writ-ing: Quasi-
  []
@@ -742,30 +770,32 @@ Underfull \hbox (badness 1859) in paragraph at lines 36--40
 []\OT1/cmr/m/n/10 Praveen Narayanan and Ryan R. New-ton.
  []
 
+[10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>]
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
- [10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+ [11
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
  ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: 60D886FF1525121D336830D3150786E0;318.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
  ) 
 Here is how much of TeX's memory you used:
- 7335 strings out of 493921
- 104763 string characters out of 3147245
- 205498 words of memory out of 3000000
- 10469 multiletter control sequences out of 15000+200000
+ 7499 strings out of 493921
+ 107019 string characters out of 3147245
+ 209727 words of memory out of 3000000
+ 10627 multiletter control sequences out of 15000+200000
  13847 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,17n,32p,1214b,1611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,17n,32p,1373b,1105s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
@@ -780,9 +810,9 @@ ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on draft.pdf (10 pages, 329377 bytes).
+Output written on draft.pdf (11 pages, 350739 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
