@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{lindsey}
+Lindsey Kuper.
+\newblock Blog.
+\newblock composition.al.
+
+\bibitem{kuper}
+Lindsey Kuper.
+\newblock {Lattice-based data structures for deterministic parallel and
+  distributed programming}.
+\newblock {\em {Dissertation}}, 2014.
+
+\bibitem{lkuper2}
+Kuper L., Turon A., Krishnaswami N., and Newton R.
+\newblock {Freeze after writing: Quasi-deterministic parallel programming with
+  LVars}.
+\newblock {\em {POPL}}, Janauary 2014.
+
+\bibitem{lkuper}
+Kuper L. and Newton R.
+\newblock {Lattice-based data structures for deterministic parallelism}.
+\newblock {\em {FHPC}}, September 2013.
+
+\bibitem{newton2}
+Kuper L. and Newton R.
+\newblock {Deterministic threshold queries of distributed data structures}.
+\newblock {\em {Draft}}, July 2014.
+
+\bibitem{simon}
+Simon Marlow.
+\newblock {\em {Parallel and Concurrent programming in Haskell}}.
+\newblock {O'Reily}, 2013.
+
+\bibitem{newton1}
+Praveen Narayanan and Ryan~R. Newton.
+\newblock Graph algorithms in a guaranteed deterministic language.
+\newblock {\em {Workshop on Deterministic and Correctness in Parallel
+  programming (WoDet 2014)}}, March 2014.
+
+\end{thebibliography}

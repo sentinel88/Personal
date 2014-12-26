@@ -150,7 +150,7 @@ let par  _ = put l (4, )
 \end{lstlisting}  
 Read from $lv$ is possible once both writes have completed, so it will always be (4, 3). But single-assignment rules out this program(although we could fake it by using a distinct IVar for each component of the pair, but with more sophisticated data structures it becomes difficult to fake a solution with IVars.)\par
 
-There is a need to generalize the single-assignment model to something that admits programs like these but retains determinism. Deterministic algorithms must be expressible in a style that guarantees determinism, and non-deterministic behaviors, where desired, must be requested explicitly. More generally, enforcing deterministic semantics simplifies composing, porting, reasoning about, debugging, and testing parallel software. Language-level enforcement of determinism is possible, but existing models tend to lack features that would make them applicable to a broader range of problems. Moreover, they lack extensibility. \\ \\
+There is a need to generalize the single-assignment model to admits programs like these but retains determinism. Deterministic algorithms must be expressible in a style that guarantees determinism, and non-deterministic behaviors, where desired, must be requested explicitly. Enforcing deterministic semantics simplifies composing, porting, reasoning about, debugging, and testing parallel software. Existing models tend to lack features that would make them applicable to a broader range of problems. Moreover, they lack extensibility. \\ \\
 \textit{\textbf{Existing models}}\cite{kuper} A number of models currently exist as a part of the long running effort towards deterministic by construction parallel programming. \par
 \begin{itemize}
         \item \textit{No-shared-state parallelism}: Pure functional programming in Haskell with par and pseq combinators is an example. It uses function level task parallelism or futures. This kind of parallelism does not allow for any shared mutable state between tasks, forcing tasks to produce values independently. Models based on pure data parallelism like \textit{Data parallel Haskell, River Trail API for Java script} also fall in this category,
@@ -191,9 +191,8 @@ To describe Lvar formally, a parallel call-by-value $\lambda$-calculus named $\l
 \centerline{
 \includegraphics[width=1.0\columnwidth]{Figures/lattice.jpg}
 }
-\caption{A nice caption. The larger width allows for more text without
-taking too much space.}
-\label{Fig2}
+\caption{Example lattices\cite{lkuper}: (a) Positive integers ordered by $\leq$ (b) IVar containing a natural number (c) Pair of natural number-valued IVars}
+\label{Figure1}
 \end{figure}
 \begin{itemize}
 \item $D$ has a least element $\bot$, representing the initial “empty” state of an Lvar,
@@ -240,15 +239,15 @@ The new, put, and get operations create, write to, and read from LVars, respecti
 \item $put$ takes a pointer to an LVar and a singleton set containing a new state and updates the LVar’s state to the least upper bound of the current state and the new state, potentially pushing the state of the LVar upward in the lattice. Any update that would take the state of an LVar to $\top$ results in an error.
 \item $get$ performs a blocking “threshold” read. It takes a pointer to an Lvar and a \emph{threshold set} $Q$, which is a non-empty subset of $D$ that is \emph{pairwise incompatible}, meaning that the lub of any two distinct elements in $Q$ is $\top$. If the LVar's state $d_1$ in the lattice is \emph{at or above} some $d_2 \in Q$, the $get$ operation unblocks and returns $d_2$. Note that $d_2$ is a unique element of $Q$, for if there is another $d_2' \neq d_2$ in the threshold set such that $d_2' \userleq d_1$, it would follow that $d_2 \sqcup d_2' \userleq d_1$, and so $d_2 \sqcup d_2'$ cannot be $\top$, which contradicts the requirement that $T$ be pairwise incompatible.
 \end{itemize}
-For Lambda Lvar syntax and semantics, remaining definitions and its details please refer XXX. 
+For Lambda Lvar syntax and semantics, remaining definitions and its details please refer\cite{lkuper}. 
 Frame rule figure should come here. \\ \\
-\textbf{\textit{Proof of determinism:}} The key to the determinism is the frame rule given in \emph{Figure 2}. A frame property captures the idea of local reasoning about programs that alter state. Here, C is a program, and $\{p\} C \{q\}$ says that if the assertion p  is true before C  runs, then the assertion q  will be true afterwards. For example, $p$ and $q$  might describe the state of the heap before and after it is updated by $C$. It tells that running $C$ starting from a state satisfying the assertion $p$ $∗$ $r$ will result in a state satisfying the assertion $q$ $∗$ $r$. The assertion $p$ $*$ $r$ is satisfied by a heap if the heap can be split into two non-overlapping parts satisfying $p$ and $r$, respectively.
+\textbf{\textit{Proof of determinism:}} The key to the determinism is the frame rule given in \cite{Figure1}. A frame property captures the idea of local reasoning about programs that alter state\cite{lindsey}. Here, C is a program, and $\{p\} C \{q\}$ says that if the assertion p  is true before C  runs, then the assertion q  will be true afterwards. For example, $p$ and $q$  might describe the state of the heap before and after it is updated by $C$. It tells that running $C$ starting from a state satisfying the assertion $p$ $∗$ $r$ will result in a state satisfying the assertion $q$ $∗$ $r$. The assertion $p$ $*$ $r$ is satisfied by a heap if the heap can be split into two non-overlapping parts satisfying $p$ and $r$, respectively.
 For LVars, the frame property says that independent effects commute with each other. Consider an expression $e$ that runs starting in \emph{store S} and steps to the expression $e′$, updating the \emph{store} to $S′$. Frame property guarantees that if $e$ starts from a larger $store S$ $\sqcup$ $R$, where $R$ is some other store \emph{“framing on”} to $S$, then $e$  will update the $store$ to $S′$ $\sqcup$ $R$, and $e$ will step to $e′$. The \emph{“frame”} \emph{store} $R$  is a \emph{store} resulting from some other independently-running computation. $S$ and $R$ (or $S′$ and $R$) need not be disjoint — we are combining them with $\sqcup$, not with $∗$. If they did have to be disjoint, it would mean that concurrent operations cannot touch the same parts of the store. For LVars, this kind of total disjointness is unnecessary, since updates commute! Instead, we can behave as though $S$ and $R$ are disjoint, even though they might not be. \\ \\
-\textbf{\textit{Diamond Lemma:}} This does the heavy lifting of the determinism proof: it establishes the diamond property, which says that if a configuration steps to two different configurations, there exists a single third configuration to which those configurations both step. For supporting lemmas, its details and complete proofs please refer to XXXXXXXXXX. Lemmas there also show  how cases of deadlocks and livelocks are also handled.
+\textbf{\textit{Diamond Lemma:}} This does the heavy lifting of the determinism proof: it establishes the diamond property, which says that if a configuration steps to two different configurations, there exists a single third configuration to which those configurations both step. For supporting lemmas, its details and complete proofs please refer to\cite{lkuper}. Lemmas there also show how cases of deadlocks and livelocks are also handled.
 
 The LVars model guarantees determinism by monotonic write operations[which can commute] and threshold read operations. But it is not as general-purpose as one might hope. Consider an unordered graph traversal. A typical implementation involves a monotonically growing set of \emph{“seen nodes”}; neighbors of seen nodes are fed back into the set until it reaches a fixed point. These are not expressible using the threshold read and least-upper-bound write operations described above. The problem is that these computations rely on negative information about a monotonic data structure, i.e., on the absence of certain writes to the data structure. In a graph traversal, neighboring nodes should only be explored if the current node is not yet in the set; a fixpoint is reached only if no new neighbors are found; and at the end of the computation it must be possible to learn exactly which nodes were reachable. But in the LVars model, asking whether a node is in a set means waiting until the node is in the set, and it is not clear how to lift this restriction while retaining determinism.
 \subsection{LVish}
-In this regard, Lvish extends the Lvars model with 2 additional capabilities. First, it adds event handlers, a mechanism for attaching a callback function to an LVar that runs, asynchronously, whenever events arrive (in the form of monotonic updates to the Lvar). Second, a primitive for freezing an LVar, which means: once an LVar is frozen, any further writes that would change its value instead throw an exception; on the other hand, it becomes possible to discover the exact value of the LVar, learning both positive and negative information about it, without blocking.
+In this regard, Lvish\cite{lkuper2} extends the Lvars model with 2 additional capabilities. First, it adds event handlers, a mechanism for attaching a callback function to an LVar that runs, asynchronously, whenever events arrive (in the form of monotonic updates to the Lvar). Second, a primitive for freezing an LVar, which means: once an LVar is frozen, any further writes that would change its value instead throw an exception; on the other hand, it becomes possible to discover the exact value of the LVar, learning both positive and negative information about it, without blocking.
 Freezing does not commute with writes. If a freeze is interleaved before such a write, the write will raise an exception; if it is interleaved afterwards, the program will proceed normally. Although it appears like determinism is lost, these programs satisfy the property of Quasi determinism that is they will always output the same result or an error.
 \vspace{-8mm}
 \singlespacing
@@ -272,7 +271,7 @@ quasi-deterministic.
 Freezing introduces quasi-determinism to the programming model, because we might freeze before we have quiesced, or because our thread that's freezing and quiescing might be racing with some other thread to write into a shared LVar. But, if it is ensured that freezes only ever happen after all writes have completed, then the computations will be deterministic, because there wouldn't be any write-after-freeze races. This is enforced at the implementation level which takes care of quiescing and
 freezing at the end of a computation. In the LVish library, this is provided by the runParThenFreeze function.
 
-[Paper] contains a quasi-deterministic, parallel, call-by-value $\lambdaLVish$-calculus extended with a store containing LVars. It extends the original LVar formalism to support event handlers and freezing. Rather than modeling the full ensemble of event handlers, handler pools, quiescence, and freezing as separate primitives, it instead formalizes the \emph{“freeze-after”} pattern—which is a simpler primitive combining all others.
+\cite{lkuper2}contains a quasi-deterministic, parallel, call-by-value $\lambdaLVish$-calculus extended with a store containing LVars. It extends the original LVar formalism to support event handlers and freezing. Rather than modeling the full ensemble of event handlers, handler pools, quiescence, and freezing as separate primitives, it instead formalizes the \emph{“freeze-after”} pattern—which is a simpler primitive combining all others.
 
 An LVar’s state is now a pair $(d,frz )$, where $d$ is an element of the application-specific set $D$ and $frz$(Short for freeze) is a “status bit” of either $true$ or $false$. We define an ordering $\leqp$ on LVar states $\state{d}{\status}$ in terms of the application-specific ordering $\userleq$ on elements of $D$. Every element of $D$ is ``freezable'' except $\top$. Informally: 
 \begin{itemize}
@@ -282,12 +281,12 @@ exactly when $d \userleq d'$.
 \item An unfrozen state $(d,false)$ is less than or equal to a frozen state $(d',true)$ exactly when $d \userleq d'$.
 \item A frozen state is less than an unfrozen state if the unfrozen state is $\top$; that is, $(d,true) \leqp (d',false)$ exactly when $d' = \top$.
 \end{itemize}
-The addition of status bits to the application-specific lattice results in a new lattice $(D_p, \leqp, \botp, \topp)$. $\lubp{}{}$ for the lub operation that $\leqp$ induces. During the evaluation of LVish programs, a \emph{store} $S$ keeps track of the states of LVars and represents them by a binding from a location $l$, drawn from a set $loc$, to its state, which is some pair $(d, frz)$ from the set $D_p$. For detailed syntax and semantics of Lvish please refer to the paper[7].\\ \\
+The addition of status bits to the application-specific lattice results in a new lattice $(D_p, \leqp, \botp, \topp)$. $\lubp{}{}$ for the lub operation that $\leqp$ induces. During the evaluation of LVish programs, a \emph{store} $S$ keeps track of the states of LVars and represents them by a binding from a location $l$, drawn from a set $loc$, to its state, which is some pair $(d, frz)$ from the set $D_p$. For detailed syntax and semantics of Lvish please refer to the paper\cite{lkuper2}.\\ \\
 \textbf{\textit{Communication primitives:}} They are same as Lvar except that new will now create a binding for a new Lvar whose initial state is (?, false). Put takes a pointer to the Lvar and a new lattice element which is a pair. Get similarly takes a threshold set containing pairs. $freeze\ e_{lv}\ after\ e_{events}\ with\ e_{cb}$ has the following semantics: It attaches the callback $e_{cb}$ to the LVar $e_{lv}$. The expression $e_{events}$ must evaluate to a event set $Q$; the callback will be executed, once, for each lattice element in $Q$ that the LVar’s state reaches or surpasses. The callback takes a lattice element as its argument. Its return value is ignored, so it runs solely for effect. For instance, a callback might itself do a put to the LVar to which it is attached, triggering yet more callbacks. If the handler reaches a quiescent state, the LVar $e_{lv}$ is frozen, and its exact state is returned (rather than an under-approximation of the state, as with $get$).
 
 To keep track of the running callbacks, LVish includes an auxiliary form of the above pattern taking additional arguments: the set of running callbacks $B$ and a set of values $H$ in the event set for which callbacks have already been launched. It detects quiescence by checking: Every event of interest that has occurred must be handled (be in $H$). Second, all existing callback threads must have completed and terminated with a value. If yes, then LVars state is freezed. To ensure quiescence is a permanent state, rather than a transient one, freezing is usually the very last step of an algorithm, permitting its result to be extracted. The $runParThenFreeze$ function inside LVish library does this, and thereby guarantees full determinism.\\ \\
-\textbf{\textit{Proof of Quasi determinism for Lvish:}} According to the paper[7] the main theorem says that if two executions starting from a configuration $\sigma$ terminate in configurations $\sigma{'}$ and $\sigma{''}$, then either $\sigma{'}$ and $\sigma{''}$ are the same configuration (up to a permutation on locations), or one of them is \emph{error}.\\
-\textit{Independence property:} Like LVars, the LVish model uses the frame property again to capture the idea that independent effects commute with each other but this time with some restrictions. If we know that a \emph{store} $S$ evaluating expression $e$ steps to a new \emph{store} $S{'}$ with $e{'}$ then it is valid to say that $S\sqcup_{S}S''$ evaluating $e$ steps to a new store $S'\sqcup_{S}S''$ with $e'$ if the following conditions are satisfied:\\
+\textbf{\textit{Proof of Quasi determinism for Lvish:}} According to the paper\cite{lkuper2} the main theorem says that if two executions starting from a configuration $\sigma$ terminate in configurations $\sigma{'}$ and $\sigma{''}$, then either $\sigma{'}$ and $\sigma{''}$ are the same configuration (up to a permutation on locations), or one of them is \emph{error}.\\
+\textit{Independence property:} Like LVars, the LVish model uses the frame property again to capture the idea that independent effects commute with each other but this time with some restrictions. If we know that a \emph{store} $S$ evaluating expression $e$ steps to a new \emph{store} $S{'}$ with $e{'}$ then it is valid to say that $S\sqcup_{S}S''$ evaluating $e$ steps to a new store $S'\sqcup_{S}S''$ with $e'$ if the following conditions are satisfied:
 \begin{itemize}
 \item The status bits of $S'\sqcup_{S}S''$ and S agree with each other for all locations shared between them.
 \item Locations in $S''$ cannot share the same name with locations newly allocated during the transition from one configuration
@@ -298,11 +297,11 @@ Please refer to the original paper and the technical report for elaborate detail
 \section{Implementation and Performance}
 A prototype implementation of Lvish is available as a monadic library in Haskell at:\\ \\
 \url{http://hackage.haskell.org/package/lvish}\\ \\
-It adopts the basic approach of the par monad. The existing Par monad[3] in Haskell offers an API for parallel programming. It provides by default a work-stealing scheduler and supports forking tasks. The programmer specifies how information flows across computations but not the order in which they will be evaluated at runtime. Information flow is described using IVars. With
+It adopts the basic approach of the par monad. The existing Par monad\cite{simon} in Haskell offers an API for parallel programming. It provides by default a work-stealing scheduler and supports forking tasks. The programmer specifies how information flows across computations but not the order in which they will be evaluated at runtime. Information flow is described using IVars. With
 LVish we get a lattice-generic infrastructure: the Par monad itself, a thread scheduler, support for blocking and signaling threads, handler pools, and event handlers. This infrastructure does not guarantee quasi-determinism, only data structure
 authors should import it who will implement a specific monotonic data structure using this library providing efficient parallel access, exporting a limited interface for its users ensuring quasi-determinism. LVish library provides its own custom scheduler and programs run only inside the par monad allowing only Lvish-sanctioned side effects to provide compile time guarantees of
 determinism and quasi determinism.\\ \\
- In order to specify the type of the par computation it provides a phantom type that indicates the determinism level.\\ \\
+In order to specify the type of the par computation it provides a phantom type that indicates the determinism level.
 \begin{lstlisting}
 data Determinism = Det | QuasiDet
 \end{lstlisting}
@@ -310,11 +309,11 @@ Par type constructor:
 \begin{lstlisting}
 Par : : Determinism -> * -> *
 \end{lstlisting}
-following suite of run functions\\ \\
+following suite of run functions
 \begin{lstlisting}
-runPar : : Par Det a -> a\\
+runPar : : Par Det a -> a
 runParIO : : Par l v l a -> IO a
-runParThenFreeze : : Deep frz a =>\\
+runParThenFreeze : : Deep frz a =>
 	Par Det a -> FrzType a
 \end{lstlisting}
 If the Lvish code uses freeze then it is marked as QuasiDet or Det if it is fully deterministic. $runparIO$ allows us to execute Lvish code in the IO monad if the determinism level is arbitrary. $runparthenFreeze$s automatically freezes the Lvar when it returns back its exact value guaranteeing determinism.\\ \\
@@ -322,7 +321,7 @@ If the Lvish code uses freeze then it is marked as QuasiDet or Det if it is full
 element is $\bot$. Lattices for which every element is the lub of some set of atoms are called atomistic, and most application-specific lattices used by LVish programs have this property and the corresponding data structure usually exposes operations that
 work at the atom level, semantically limiting puts to atoms, gets to threshold sets of atoms, and event sets to sets of atoms. A compact way to represent a change to the lattice is deltas allowing to easily and efficiently communicate such changes between
 $puts$ and $gets$/handlers. For a set, a delta is an element; for a map, a key/value pair.\par
-\textit{Idempotence,} meaning that $d\sqcup{d=d}$ for any element $d$. Repeated puts or freezes have no effect, if the scheduler is allowed to occasionally duplicate work, it is possible to save on synchronization costs. Since LVish computations are guaranteed to be idempotent, we could use such a scheduler (standard Chase-Lev deque [10]). Idempotence helps to deal with races between $put$ and $get/addHandler$. \\ \\
+\textit{Idempotence,} meaning that $d\sqcup{d=d}$ for any element $d$. Repeated puts or freezes have no effect, if the scheduler is allowed to occasionally duplicate work, it is possible to save on synchronization costs. Since LVish computations are guaranteed to be idempotent, we could use such a scheduler (standard Chase-Lev deque\cite{sched}). Idempotence helps to deal with races between $put$ and $get/addHandler$. \\ \\
 Internally par monad represents computations in continuation passing style, in terms of their interpretation in the IO monad. The status bit of an LVar is tied together with a bag of waiting listeners, which include blocked gets and handlers.
 \begin{lstlisting}
 data Status d = Frozen |
@@ -330,14 +329,14 @@ data Status d = Frozen |
 data LVar a d = LVar{state :: a,
 	status :: IORef(Status d)} 
 \end{lstlisting}
-The bag module supports atomic insertion and removal, and concurrent traversal.\\
+The bag module supports atomic insertion and removal, and concurrent traversal.
 \begin{lstlisting}
 put :: Bag a -> a -> IO(Token a)
 remove :: Token a -> IO()
 foreach :: Bag a ->
    (a -> Token a -> IO()) -> IO()
 \end{lstlisting}
-A listener for an LVar is a pair of callbacks, one called when the LVars lattice value changes, and the other when the LVar is frozen. \\
+A listener for an LVar is a pair of callbacks, one called when the LVars lattice value changes, and the other when the LVar is frozen. 
 \begin{lstlisting}
 data Listener d = Listener{
    onUpd :: d -> Token(Listener d)
@@ -345,7 +344,7 @@ data Listener d = Listener{
 onFrz :: Token( Listener d)
    -> SchedQ -> IO() g
 \end{lstlisting}
-Internally, the Par monad represents computations in continuation-passing style, in terms of their interpretation in the IO monad.\\
+Internally, the Par monad represents computations in continuation-passing style, in terms of their interpretation in the IO monad.
 \begin{lstlisting}
 type ClosedPar = SchedQ -> IO()
 type ParCont a = a -> ClosedPar
@@ -368,9 +367,9 @@ including $quiesce$, $addhandler$ etc.\\ \\
 To ensure correctness in such race situations,in addition to checking status bit, a mark bit is used in each CPU scheduler state.
 \item $freezeLV$ provides freeze semantics. Takes an LVar as argument.
 \end{itemize}
-\textbf{\textit{Evaluation: k-CFA study}} In [7] a case study on k-CFA (parallelizing control flow analysis) is done to evaluate the performance of the Lvish implementation. K-CFA provide a hierarchy of increasingly precise methods to compute the control 
+\textbf{\textit{Evaluation: k-CFA study}} In \cite{lkuper2} a case study on k-CFA (parallelizing control flow analysis) is done to evaluate the performance of the Lvish implementation. K-CFA provide a hierarchy of increasingly precise methods to compute the control 
 flow of a program or precisely the flow of values to expressions. The figure on the following page shows performance data[7] for LVish on 2 benchmarks. One is the blur benchmark based on k=2. The implementation using LVish for the 2 benchmarks uses lock-free data structures. Another synthetic benchmark is notChain which is simply a chain of 300 not functions that negates the benifit of the sharing approach in the LVish model.\\ \\
-\textbf{\textit{Related work:}} In [6], feasibility of LVar threshold reads is explored in a distributed setting. Distributed systems involve replication of data objects across several locations making them robust to data loss and give better data locality. Eventual consistency is a policy in which the updates eventually reach the replicas and the replicas need not agree at all times. Convergent replicated data types provide a simple mathematical framework for reasoning about and enforcing the eventual consistency of such replicated objects, based on viewing them as elements of a lattice and replica conflict resolution as the lattice's join operation. CvRDTs are provably eventually consistent, but queries of CvRDTs allow inconsistent intermediate
+\textbf{\textit{Related work:}} In \cite{newton2}, feasibility of LVar threshold reads is explored in a distributed setting. Distributed systems involve replication of data objects across several locations making them robust to data loss and give better data locality. Eventual consistency is a policy in which the updates eventually reach the replicas and the replicas need not agree at all times. Convergent replicated data types provide a simple mathematical framework for reasoning about and enforcing the eventual consistency of such replicated objects, based on viewing them as elements of a lattice and replica conflict resolution as the lattice's join operation. CvRDTs are provably eventually consistent, but queries of CvRDTs allow inconsistent intermediate
 states of replicas to be observed. LVar-style threshold queries to CvRDTs extend them with support for deterministic queries and show that they are strongly consistent queries. A threshold query that returns an answer when executed on a replica will return the same answer every subsequent time, and on a different replica, it will eventually return the same answer, otherwise will block until it does so. It is therefore impossible to observe different results from the same threshold query, whether at
 different times on the same replica, or whether on different replicas.
 
@@ -379,27 +378,19 @@ different times on the same replica, or whether on different replicas.
 \centerline{
 \includegraphics[width=1.3\columnwidth]{Figures/speedup.jpg}
 }
-\caption{A nice caption. The larger width allows for more text without
-taking too much space.}
-\label{Fig2}
+\caption{Performance of LVish on parallelizing k-CFA\cite{lkuper2}}
+\label{Figure2}
 \end{figure}
 
 \section{Summary}
 \label{summary}
 In an attempt towards creating better deterministic parallel programming models, Lvish has extended the existing usage of monotonicity as a theme to provide better applicability, usability, performance, providing a single generic model that subsumes
-many of the single assignment models, thereby representing a larger class of problems which can be effciently parallelized. The performance with regards to certain benchmark applications are an evidence of the same. [4]discusses the viability of Lvish for certain graph algorithms, its drawbacks and proposed extension. Some of the drawbacks to highlight are the fact that Lvish side  effects are only monotonic updates and if a data structure needs to be updated multiple times it will have to be done out of
+many of the single assignment models, thereby representing a larger class of problems which can be effciently parallelized. The performance with regards to certain benchmark applications are an evidence of the same. \cite{newton1}discusses the viability of Lvish for certain graph algorithms, its drawbacks and proposed extension. Some of the drawbacks to highlight are the fact that Lvish side  effects are only monotonic updates and if a data structure needs to be updated multiple times it will have to be done out of
 place thereby frequently allocating LVars becoming a source of additional memory allocation and ineffcient relative to in-place versions. Blocking $get$ semantics could slow down until the dependency is met reducing the performance, hence instead
 of blocking, the tasks could be retried at a later time/rescheduled when there dependency has been satisfied. The overhead in going through the scheduler many times has also been highlighted in[4] for applications like Maximum independent set. The
 paper proposes a solution similar to an abort/retry feature.
 % Put citations from bibtex into References section which were not
 % explicity cited.
-\nocite{robotron,
-stonx,vice,650sim,herculessim,zib,4004,thermal1,thermal2,rojas,neumann,
-neumann1void,neumann2void,neumann3,neumann4,Siewiorek,AmBlBr,Blaauw:1997:CAC,ChPB97,Brom98,Clym93,Buhu99,
-Edwa01,Nill99,ABC+90,Rama91,Heid97,Kist95,Klot03,LMcCL92,LFS+92,LMDD92,Vlec03,Cray77,top500,650,Amda67,
-Arla88,ODLD86,Hick04,Walk04}
-
-
 \bibliographystyle{plain}
 % Literature sources are to be found in seminarpaper.bib
 \bibliography{seminarpaper} 
