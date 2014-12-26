@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  26 DEC 2014 16:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  26 DEC 2014 21:23
 entering extended mode
 **draft.tex
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.tex"
@@ -342,12 +342,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 125.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-[][][][][][][][][][][][][][][]
- []
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -448,6 +443,12 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+ <Figures/lattice.jpg, id=42, 701.62125pt x 331.99031pt>
+File: Figures/lattice.jpg Graphic file (type jpg)
+
+<use Figures/lattice.jpg>
+Package pdftex.def Info: Figures/lattice.jpg used on input line 193.
+(pdftex.def)             Requested size: 222.0pt x 105.04353pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -476,24 +477,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--212
  []
 
 
-Overfull \hbox (24.15897pt too wide) detected at line 234
+Overfull \hbox (24.15897pt too wide) detected at line 233
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 l\OT1/cmr/m/n/10 ) = []
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 236--239
-\OT1/cmr/m/it/10 By Def-i-ni-tion 3:\OT1/cmr/m/n/10 , if $\OML/cmm/m/it/10 d[] 
-\OMS/cmsy/m/n/10 t \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 >$\O
-T1/cmr/m/n/10 , then
+Underfull \hbox (badness 2012) in paragraph at lines 235--238
+\OT1/cmr/bx/it/10 By Def-i-ni-tion 3:\OT1/cmr/m/n/10 , if $\OML/cmm/m/it/10 d[]
+ \OMS/cmsy/m/n/10 t \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 >$\
+OT1/cmr/m/n/10 , then
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--239
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 236--239
+Underfull \hbox (badness 2119) in paragraph at lines 235--238
 \OT1/cmr/bx/it/10 Communication Prim-i-tives \OT1/cmr/m/n/10 The new, put,
  []
 
@@ -506,6 +507,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+[4 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/lattice.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no ó in font cmr10!
@@ -546,38 +548,39 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no à in font cmr10!
 Missing character: There is no ó in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--248
 
  []
 
-[4]
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ú in font cmti10!
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ù in font cmti10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--262
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 258--261
 
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 259--262
+Underfull \hbox (badness 1297) in paragraph at lines 258--261
 \OT1/cmr/bx/it/10 Quiescence through han-dler pools: \OT1/cmr/m/n/10 Event
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 259--262
+Underfull \hbox (badness 2158) in paragraph at lines 258--261
 \OT1/cmr/m/n/10 run-ning. De-tect-ing qui-es-cence is cru-cial for
  []
 
-[5]
+
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
 Missing character: There is no ‚ in font cmti10!
 Missing character: There is no Ä in font cmti10!
 Missing character: There is no ú in font cmti10!
@@ -587,6 +590,7 @@ Missing character: There is no ù in font cmti10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
+ [6]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -597,343 +601,336 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 2903) in paragraph at lines 280--282
+Underfull \hbox (badness 2903) in paragraph at lines 279--281
 []\OT1/cmr/m/n/10 Two un-frozen states are or-dered ac-cord-
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 280--282
+Underfull \hbox (badness 1137) in paragraph at lines 279--281
 \OT1/cmr/m/n/10 ing to the application-specific $\OMS/cmsy/m/n/10 v$\OT1/cmr/m/
 n/10 ; that is,
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 \OT1/cmr/m/n/10 specific lat-tice re-sults in a new lat-tice
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 286--287
+Underfull \hbox (badness 4084) in paragraph at lines 285--287
 $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D[]; \OMS/cmsy/m/n/10 v[]\OML/cmm/m/it/10 ; 
 \OMS/cmsy/m/n/10 ?[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 > []\OT1/cmr/m/n/10 )$.
  $\OMS/cmsy/m/n/10 t[]$ \OT1/cmr/m/n/10 for the lub op-er-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 1270) in paragraph at lines 288--289
-[]\OT1/cmr/bx/it/10 Communication prim-i-tives: \OT1/cmr/m/n/10 They are
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 288--289
-\OT1/cmr/m/n/10 a new lat-tice el-e-ment which is a pair. Get
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 290--293
+Underfull \hbox (badness 1360) in paragraph at lines 288--291
 \OT1/cmr/m/n/10 The $\OML/cmm/m/it/10 runParThenFreeze$ \OT1/cmr/m/n/10 func-ti
 on in-side LVish
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 290--293
+Underfull \hbox (badness 1389) in paragraph at lines 288--291
 \OT1/cmr/m/n/10 li-brary does this, and thereby guar-an-tees full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
 
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 290--293
+Underfull \hbox (badness 2799) in paragraph at lines 288--291
 \OT1/cmr/bx/it/10 Proof of Quasi de-ter-min-ism for Lvish:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
-
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 301--308
+Underfull \hbox (badness 1057) in paragraph at lines 299--306
 \OT1/cmr/m/n/10 quasi-determinism, only data struc-ture au-thors
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 301--308
+Underfull \hbox (badness 1028) in paragraph at lines 299--306
 \OT1/cmr/m/n/10 and pro-grams run only in-side the par monad
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 301--308
+Underfull \hbox (badness 2689) in paragraph at lines 299--306
 \OT1/cmr/m/n/10 al-low-ing only Lvish-sanctioned side ef-fects to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 313.
-
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 311.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 313.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 311.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 320--324
 
  []
 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 1158) in paragraph at lines 320--324
+\OT1/cmr/m/n/10 data struc-ture usu-ally ex-poses op-er-a-tions that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 325--327
+\OT1/cmr/m/n/10 Internally par monad rep-re-sents com-pu-ta-tions
+ []
+
 [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
+ []
 
 
-LaTeX Warning: Citation `robotron' undefined on input line 368.
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
+ []
 
-LaTeX Warning: Citation `stonx' undefined on input line 368.
 
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
-LaTeX Warning: Citation `vice' undefined on input line 368.
+ []
 
 
-LaTeX Warning: Citation `650sim' undefined on input line 368.
+Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
+ []
 
-LaTeX Warning: Citation `herculessim' undefined on input line 368.
 
+Underfull \hbox (badness 2165) in paragraph at lines 371--376
+\OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vide a hi-er-ar-chy
+ []
 
-LaTeX Warning: Citation `zib' undefined on input line 368.
 
+Underfull \hbox (badness 10000) in paragraph at lines 371--376
 
-LaTeX Warning: Citation `4004' undefined on input line 368.
+ []
 
 
-LaTeX Warning: Citation `thermal1' undefined on input line 368.
+Underfull \hbox (badness 1668) in paragraph at lines 371--376
+\OT1/cmr/m/n/10 con-sis-tency is a pol-icy in which the up-dates
+ []
 
+[9] <Figures/speedup.jpg, id=126, 619.56468pt x 395.22656pt>
+File: Figures/speedup.jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation `thermal2' undefined on input line 368.
+<use Figures/speedup.jpg>
+Package pdftex.def Info: Figures/speedup.jpg used on input line 381.
+(pdftex.def)             Requested size: 288.60068pt x 184.09807pt.
 
 
-LaTeX Warning: Citation `rojas' undefined on input line 368.
+LaTeX Warning: Citation `robotron' undefined on input line 400.
 
 
-LaTeX Warning: Citation `neumann' undefined on input line 368.
+LaTeX Warning: Citation `stonx' undefined on input line 400.
 
 
-LaTeX Warning: Citation `neumann1void' undefined on input line 368.
+LaTeX Warning: Citation `vice' undefined on input line 400.
 
 
-LaTeX Warning: Citation `neumann2void' undefined on input line 368.
+LaTeX Warning: Citation `650sim' undefined on input line 400.
 
 
-LaTeX Warning: Citation `neumann3' undefined on input line 368.
+LaTeX Warning: Citation `herculessim' undefined on input line 400.
 
 
-LaTeX Warning: Citation `neumann4' undefined on input line 368.
+LaTeX Warning: Citation `zib' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Siewiorek' undefined on input line 368.
+LaTeX Warning: Citation `4004' undefined on input line 400.
 
 
-LaTeX Warning: Citation `AmBlBr' undefined on input line 368.
+LaTeX Warning: Citation `thermal1' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Blaauw:1997:CAC' undefined on input line 368.
+LaTeX Warning: Citation `thermal2' undefined on input line 400.
 
 
-LaTeX Warning: Citation `ChPB97' undefined on input line 368.
+LaTeX Warning: Citation `rojas' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Brom98' undefined on input line 368.
+LaTeX Warning: Citation `neumann' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Clym93' undefined on input line 368.
+LaTeX Warning: Citation `neumann1void' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Buhu99' undefined on input line 368.
+LaTeX Warning: Citation `neumann2void' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Edwa01' undefined on input line 368.
+LaTeX Warning: Citation `neumann3' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Nill99' undefined on input line 368.
+LaTeX Warning: Citation `neumann4' undefined on input line 400.
 
 
-LaTeX Warning: Citation `ABC+90' undefined on input line 368.
+LaTeX Warning: Citation `Siewiorek' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Rama91' undefined on input line 368.
+LaTeX Warning: Citation `AmBlBr' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Heid97' undefined on input line 368.
+LaTeX Warning: Citation `Blaauw:1997:CAC' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Kist95' undefined on input line 368.
+LaTeX Warning: Citation `ChPB97' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Klot03' undefined on input line 368.
+LaTeX Warning: Citation `Brom98' undefined on input line 400.
 
 
-LaTeX Warning: Citation `LMcCL92' undefined on input line 368.
+LaTeX Warning: Citation `Clym93' undefined on input line 400.
 
 
-LaTeX Warning: Citation `LFS+92' undefined on input line 368.
+LaTeX Warning: Citation `Buhu99' undefined on input line 400.
 
 
-LaTeX Warning: Citation `LMDD92' undefined on input line 368.
+LaTeX Warning: Citation `Edwa01' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Vlec03' undefined on input line 368.
+LaTeX Warning: Citation `Nill99' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Cray77' undefined on input line 368.
+LaTeX Warning: Citation `ABC+90' undefined on input line 400.
 
 
-LaTeX Warning: Citation `top500' undefined on input line 368.
+LaTeX Warning: Citation `Rama91' undefined on input line 400.
 
 
-LaTeX Warning: Citation `650' undefined on input line 368.
+LaTeX Warning: Citation `Heid97' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Amda67' undefined on input line 368.
+LaTeX Warning: Citation `Kist95' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Arla88' undefined on input line 368.
+LaTeX Warning: Citation `Klot03' undefined on input line 400.
 
 
-LaTeX Warning: Citation `ODLD86' undefined on input line 368.
+LaTeX Warning: Citation `LMcCL92' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Hick04' undefined on input line 368.
+LaTeX Warning: Citation `LFS+92' undefined on input line 400.
 
 
-LaTeX Warning: Citation `Walk04' undefined on input line 368.
+LaTeX Warning: Citation `LMDD92' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Vlec03' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Cray77' undefined on input line 400.
+
+
+LaTeX Warning: Citation `top500' undefined on input line 400.
+
+
+LaTeX Warning: Citation `650' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Amda67' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Arla88' undefined on input line 400.
+
+
+LaTeX Warning: Citation `ODLD86' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Hick04' undefined on input line 400.
+
+
+LaTeX Warning: Citation `Walk04' undefined on input line 400.
 
 No file draft.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
-[9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
- ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
-Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 60D886FF1525121D336830D3150786E0;318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
+[10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
 
+
+Package rerunfilecheck Warning: File `draft.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `draft.out':
+(rerunfilecheck)             Before: E916C5DA1341C1DA8F16BF998055486F;154
+(rerunfilecheck)             After:  60D886FF1525121D336830D3150786E0;318.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 406.
  ) 
 Here is how much of TeX's memory you used:
- 7314 strings out of 493921
- 104208 string characters out of 3147245
- 200061 words of memory out of 3000000
- 10490 multiletter control sequences out of 15000+200000
+ 7354 strings out of 493921
+ 104800 string characters out of 3147245
+ 207000 words of memory out of 3000000
+ 10498 multiletter control sequences out of 15000+200000
  13847 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,17n,32p,1214b,1320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,17n,32p,1214b,1105s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
@@ -948,9 +945,9 @@ ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmtt9.pfb>
-Output written on draft.pdf (9 pages, 238914 bytes).
+Output written on draft.pdf (10 pages, 321343 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 35 words of extra memory for PDF output out of 10000 (max. 10000000)
 
