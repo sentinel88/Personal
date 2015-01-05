@@ -306,7 +306,7 @@ Please refer to the original paper and the technical report for elaborate detail
 \section{Implementation and Performance}
 A prototype implementation of Lvish is available as a monadic library in Haskell at:\\ \\
 \url{http://hackage.haskell.org/package/lvish}\\ \\
-It adopts the basic approach of the par monad. The existing $par$ monad\cite{simon} in Haskell offers an API for parallel programming. It provides by default a work-stealing scheduler and supports forking tasks. The programmer specifies how information flows across computations but not the order in which they will be evaluated at runtime. Information flow is described using IVars. With
+It adopts the basic approach of the $par$ monad. The existing $par$ monad\cite{simon} in Haskell offers an API for parallel programming. It provides by default a work-stealing scheduler and supports forking tasks. The programmer specifies how information flows across computations but not the order in which they will be evaluated at runtime. Information flow is described using IVars. With
 LVish we get a lattice-generic infrastructure: the $par$ monad itself, a thread scheduler, support for blocking and signaling threads, handler pools, and event handlers. This infrastructure does not guarantee quasi-determinism, only data structure
 authors should import it who will implement a specific monotonic data structure using this library providing efficient parallel access, exporting a limited interface for its users ensuring quasi-determinism. LVish library provides its own custom scheduler and programs run only inside the $par$ monad allowing only Lvish-sanctioned side effects to provide compile time guarantees of
 determinism and quasi determinism.\\ \\
@@ -325,13 +325,13 @@ runParIO :: Par l v l a -> IO a
 runParThenFreeze :: Deep frz a =>
 	Par Det a -> FrzType a
 \end{verbatim}
-If the Lvish code uses freeze then it is marked as QuasiDet or Det if it is fully deterministic. $runparIO$ allows us to execute Lvish code in the IO monad if the determinism level is arbitrary. $runparthenFreeze$s automatically freezes the Lvar when it returns back its exact value guaranteeing determinism.\\ \\
+If the Lvish code uses $freeze$ then it is marked as \emph{QuasiDet} or \emph{Det} if it is fully deterministic. $runparIO$ allows us to execute Lvish code in the IO monad if the determinism level is arbitrary. $runparthenFreeze$ automatically freezes the Lvar when it returns back its exact value guaranteeing determinism.\\ \\
 \textbf{\textit{Key Ideas:}} \textit{Atoms and Idempotence:} Atoms are elements not equal to $\bot$ but whose only smaller
 element is $\bot$. Lattices for which every element is the lub of some set of atoms are called atomistic, and most application-specific lattices used by LVish programs have this property and the corresponding data structure usually exposes operations that
 work at the atom level, semantically limiting puts to atoms, gets to threshold sets of atoms, and event sets to sets of atoms. A compact way to represent a change to the lattice is deltas allowing to easily and efficiently communicate such changes between
 $puts$ and $gets$/handlers. For a set, a delta is an element; for a map, a key/value pair.\par
 \textit{Idempotence,} meaning that $d\sqcup{d=d}$ for any element $d$. Repeated puts or freezes have no effect, if the scheduler is allowed to occasionally duplicate work, it is possible to save on synchronization costs. Since LVish computations are guaranteed to be idempotent, we could use such a scheduler (standard Chase-Lev deque\cite{sched}). Idempotence helps to deal with races between $put$ and $get/addHandler$. \\ \\
-Internally par monad represents computations in continuation passing style, in terms of their interpretation in the IO monad. The status bit of an LVar is tied together with a bag of waiting listeners, which include blocked gets and handlers.
+Internally $par$ monad represents computations in continuation passing style, in terms of their interpretation in the IO monad. The status bit of an LVar is tied together with a bag of waiting listeners, which include blocked gets and handlers.
 \begin{verbatim}
 data Status d = Frozen |
 	Active (B.Bag(Listener d))
