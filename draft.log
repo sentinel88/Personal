@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  6 JAN 2015 00:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  6 JAN 2015 00:51
 entering extended mode
 **draft.tex
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.tex"
@@ -588,12 +588,12 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
 
-Underfull \hbox (badness 2903) in paragraph at lines 287--289
+Underfull \hbox (badness 2903) in paragraph at lines 286--288
 []\OT1/cmr/m/n/10 Two un-frozen states are or-dered ac-cord-
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 287--289
+Underfull \hbox (badness 1137) in paragraph at lines 286--288
 \OT1/cmr/m/n/10 ing to the application-specific $\OMS/cmsy/m/n/10 v$\OT1/cmr/m/
 n/10 ; that is,
  []
@@ -602,81 +602,81 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 \OT1/cmr/m/n/10 specific lat-tice re-sults in a new lat-tice
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 293--295
+Underfull \hbox (badness 4084) in paragraph at lines 292--294
 $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D[]; \OMS/cmsy/m/n/10 v[]\OML/cmm/m/it/10 ; 
 \OMS/cmsy/m/n/10 ?[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 > []\OT1/cmr/m/n/10 )$.
  $\OMS/cmsy/m/n/10 t[]$ \OT1/cmr/m/n/10 for the lub op-er-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 296--299
+Underfull \hbox (badness 1360) in paragraph at lines 295--298
 \OT1/cmr/m/n/10 The $\OML/cmm/m/it/10 runParThenFreeze$ \OT1/cmr/m/n/10 func-ti
 on in-side LVish
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 296--299
+Underfull \hbox (badness 1389) in paragraph at lines 295--298
 \OT1/cmr/m/n/10 li-brary does this, and thereby guar-an-tees full
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--299
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 296--299
+Underfull \hbox (badness 2799) in paragraph at lines 295--298
 \OT1/cmr/bx/it/10 Proof of Quasi de-ter-min-ism for Lvish:
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 307--314
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--314
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 307--314
+Underfull \hbox (badness 1057) in paragraph at lines 306--313
 \OT1/cmr/m/n/10 quasi-determinism, only data struc-ture au-thors
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 307--314
+Underfull \hbox (badness 2689) in paragraph at lines 306--313
 \OT1/cmr/m/n/10 al-low-ing only Lvish-sanctioned side ef-fects to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--314
+Underfull \hbox (badness 10000) in paragraph at lines 306--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 328--330
+Underfull \hbox (badness 1189) in paragraph at lines 327--329
 \OT1/cmr/m/n/10 are el-e-ments not equal to $\OMS/cmsy/m/n/10 ?$ \OT1/cmr/m/n/1
 0 but whose only
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 368--371
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
 
  []
 
@@ -684,25 +684,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
 File: Figures/speedup.jpg Graphic file (type jpg)
 
 <use Figures/speedup.jpg>
-Package pdftex.def Info: Figures/speedup.jpg used on input line 384.
+Package pdftex.def Info: Figures/speedup.jpg used on input line 383.
 (pdftex.def)             Requested size: 222.0pt x 131.15509pt.
 
-Underfull \hbox (badness 2165) in paragraph at lines 377--388
+Underfull \hbox (badness 2165) in paragraph at lines 376--387
 \OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vide a hi-er-ar-chy
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 377--388
+Underfull \hbox (badness 1694) in paragraph at lines 376--387
 \OT1/cmr/m/n/10 data for LVish im-ple-men-ta-tion us-ing lock-free
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--388
+Underfull \hbox (badness 10000) in paragraph at lines 376--387
 
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 377--388
+Underfull \hbox (badness 1668) in paragraph at lines 376--387
 \OT1/cmr/m/n/10 con-sis-tency is a pol-icy in which the up-dates
  []
 
@@ -717,16 +717,16 @@ Underfull \hbox (badness 1859) in paragraph at lines 36--40
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
  [10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
  ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 396.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: 60D886FF1525121D336830D3150786E0;318.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
  ) 
 Here is how much of TeX's memory you used:
  7424 strings out of 493921
@@ -751,7 +751,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt9.pfb>
-Output written on draft.pdf (10 pages, 357482 bytes).
+Output written on draft.pdf (10 pages, 357546 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
