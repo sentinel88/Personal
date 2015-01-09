@@ -323,7 +323,7 @@ runParThenFreeze :: Deep frz a =>
 \end{verbatim}
 $runparIO$ allows us to execute Lvish code in the IO monad if the determinism level is arbitrary. $runparthenFreeze$ automatically freezes the Lvar when it returns back its exact value guaranteeing determinism.\\ \\
 \textbf{\textit{Key Ideas:}} \textit{Atoms and Idempotence:} \textit{Atoms} are elements not equal to $\bot$ but whose only smaller element is $\bot$. Lattices in which every element is the LUB of some set of atoms are called atomistic, and most application-specific lattices used by LVish programs have this property. \ref{Figure1} is an example for an atomistic lattice where the atoms are singleton elements and all the elements can be obtained as LUB of these atoms. Data structures corresponding to such type of lattices usually expose operations that work at the atom level, semantically limiting $puts$ to atoms, $gets$ to threshold sets of atoms, and event sets to sets of atoms. LVish facilitates good performance for atomistic lattices by associating LVars with a set of deltas(changes), as well a lattice. For atomistic lattices, the deltas are just the atoms, for a set, a delta is an element; for a map, a key/value pair. Deltas allow easy and efficient communication of changes between $puts$ and $gets$/handlers. \par
-\textit{Idempotence,} meaning that $d\sqcup{d=d}$ for any element $d$. Repeated $puts$ or $freezes$ have no effect, if the scheduler is allowed to occasionally duplicate work, it is possible to save on synchronization costs. LVish computations are guaranteed to be idempotent and uses the scheduler(\textit{standard Chase-Lev deque}). Idempotence helps to deal with races between $put$ and $get/addHandler$. \\ \\ 
+\textit{Idempotence,} means that $d\sqcup{d=d}$ for any element $d$. Repeated $puts$ or $freezes$ have no effect and if the scheduler is allowed to occasionally duplicate work, it is possible to save on synchronization costs. LVish computations are guaranteed to be idempotent and use the scheduler(\textit{standard Chase-Lev deque}). Idempotence also 	helps to deal with races between $put$ and $get/addHandler$. \\ \\ 
 The status bit of an LVar is tied together with a bag of waiting listeners, which include blocked $gets$ and handlers.
 \begin{verbatim}
 data Status d = Frozen |
@@ -331,13 +331,13 @@ data Status d = Frozen |
 data LVar a d = LVar{state :: a,
 	    status :: IORef(Status d)} 
 \end{verbatim}
-The bag module supports atomic insertion and removal, and concurrent traversal.\\ \\
-%\begin{verbatim}
-\texttt{put :: Bag a -> a -> IO(Token a)\\
-remove :: Token a -> IO() $\bot$\\
-foreach :: Bag a ->\\
-   (a -> Token a -> IO()) -> IO()}\\ \\
-%\end{verbatim}
+The bag module supports atomic insertion and removal, and concurrent traversal.
+\begin{verbatim}
+put :: Bag a -> a -> IO(Token a)
+remove :: Token a -> IO() 
+foreach :: Bag a ->
+    (a -> Token a -> IO()) -> IO()
+\end{verbatim}
 A listener for an LVar is a pair of callbacks, one called when the LVars lattice value changes, and the other when the LVar is frozen. 
 \begin{verbatim}
 data Listener d = Listener{
@@ -360,7 +360,7 @@ data HandlerPool = HandlerPool{
     numCallbacks :: Counter,
     blocked :: B.Bag ClosedPar}
 \end{verbatim}
-The counter tracks the number of currently executing callbacks, which is used to implement quiesce. A bag of threads that are blocked waiting for the pool to reach a quiescent state. Please refer to\cite{lkuper2} for further details on the library implementation.\\ \\
+The counter tracks the number of currently executing callbacks, which is used to implement quiesce. A bag of threads that are blocked waiting for the pool to reach a quiescent state.\\ Please refer to \cite{lkuper2}\cite{kuper} for further details on the library implementation and the different functions available.\\ \\ 
 \textbf{\textit{Communication primitives:}}
 \begin{itemize}
 \item $getLV$ provides $get$ semantics. It takes a global and a delta threshold function as arguments.
@@ -375,7 +375,7 @@ To ensure correctness in such race situations,in addition to checking status bit
 \centerline{
 \includegraphics[width=1.0\columnwidth]{Figures/speedup.jpg}
 }
-\caption{Performance of LVish on parallelizing k-CFA\cite{lkuper2}}
+\caption{Performance of LVish on parallelizing k-CFA\cite{lkuper2} and on a synthetic benchmark notChain.}
 \label{Figure2}
 \end{figure}
 drawbacks and enhancements. Lvish side effects are only monotonic updates. If a data structure needs to be updated multiple times, it will have to be done out of place by allocating LVars frequently, resulting in additional memory allocation and inefficiency relative to the in-place versions. Blocking $get$ semantics could slow down the performance until the dependency is met. Instead of blocking, the tasks could be retried at a later time/rescheduled when there dependency has been satisfied and the paper proposes an abort/retry feature for the same. The overhead in going through the scheduler many times has also been highlighted for applications like Maximum independent set.\\ \par
