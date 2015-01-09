@@ -174,7 +174,7 @@ The property of monotonically increasing write operations is enforced by the lan
 let par _ = put num 3
         _ = put num 2
         x = get num
-  in x  /*could be 2 or 3*/
+  in x  /could be 2 or 3/
 \end{verbatim}
 Monotonic writes alone aren't enough to ensure determinism. The above program is non-deterministic where num's notion of “bigger” is $\geq$. Despite writes always being monotonically increasing. $Get$ might read either $2$ or $3$, depending on the order of $put$ or $get$ operations determined by the scheduler. With an LVar model this behavior changes.\par
 \begin{itemize}
@@ -310,7 +310,7 @@ In order to specify the type of LVar effects that can occur within a given $par$
 \begin{verbatim}
 data Determinism = Det | QuasiDet
 \end{verbatim}
-Par type constructor($\ast$ is the normal haskell type):
+$Par$ type constructor($\ast$ is the normal haskell type):
 \begin{verbatim}
 Par :: Determinism -> * -> *
 \end{verbatim}
@@ -346,7 +346,7 @@ data Listener d = Listener{
    onFrz :: Token( Listener d)
    -> SchedQ -> IO() g
 \end{verbatim}
-Internally, the Par monad represents computations in continuation-passing style, in terms of their interpretation in the IO monad.
+Internally, the $Par$ monad represents computations in continuation-passing style, in terms of their interpretation in the IO monad.
 \begin{verbatim}
 type ClosedPar = SchedQ -> IO()
 type ParCont a = a -> ClosedPar
@@ -357,8 +357,8 @@ The $ClosedPar$ type represents ready-to-run $Par$ computations, which are given
 computation, on the other hand, completes by passing its intended result to its continuation yielding a $ClosedPar$ computation.
 \begin{verbatim}
 data HandlerPool = HandlerPool{
-numCallbacks :: Counter,
-blocked :: B.Bag ClosedPar}
+    numCallbacks :: Counter,
+    blocked :: B.Bag ClosedPar}
 \end{verbatim}
 The counter tracks the number of currently executing callbacks, which is used to implement quiesce. A bag of threads that are blocked waiting for the pool to reach a quiescent state. Please refer to\cite{lkuper2} for further details on the library implementation.\\ \\
 \textbf{\textit{Communication primitives:}}
@@ -382,7 +382,7 @@ drawbacks and enhancements. Lvish side effects are only monotonic updates. If a 
 The feasibility of LVar threshold reads have been explored in a distributed setting\cite{newton2}. Distributed systems involve replication of data objects across several locations making them robust to data loss and provide better data locality. Eventual consistency is a policy where the updates for data objects \textbf{\textit{eventually}} reach the replicas, that need not always agree on queries. Convergent replicated data types provide a mathematical framework for reasoning about and enforcing the eventual consistency of such replicated objects, based on viewing them as elements of a lattice and replica conflict resolution as the lattice's join operation. CvRDTs are provably eventually consistent, but queries of CvRDTs allow inconsistent intermediate states of replicas to be observed. LVar-style threshold queries to CvRDTs extend them with support for deterministic queries and show that they are strongly consistent queries. A threshold query that returns an answer when executed on a replica will return the same answer every subsequent time, and on a different replica, it will eventually return the same answer, otherwise will block until it does so. It is therefore impossible to observe different results from the same threshold query, whether at different times on the same replica, or on different replicas.  
 \section{Summary}
 \label{summary}
-In an attempt towards creating better deterministic parallel programming models, Lvish has extended the existing theme of monotonicity to provide better applicability, usability, performance and a single generic model that subsumes many of the single assignment models, thereby representing a larger class of problems which can be efficiently parallelized. The performance with regards to certain benchmarks are an evidence of the same. At the end of the previous section, some of the drawbacks and a proposed enhancement were highlighted from a recent paper.
+In an attempt towards creating better deterministic parallel programming models, Lvish has extended the existing theme of monotonicity to provide better applicability, usability, performance and a single generic model that subsumes many of the single assignment models, thereby representing a larger class of problems which can be efficiently parallelized. The performance with regards to certain benchmarks are an evidence of the same. At the end of the previous section, some of the drawbacks of LVish and a proposed enhancement were highlighted from a recent paper.
 % Put citations from bibtex into References section which were not
 % explicity cited.
 \bibliographystyle{plain}
