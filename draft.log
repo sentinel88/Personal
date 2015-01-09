@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  6 JAN 2015 00:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  9 JAN 2015 12:13
 entering extended mode
 **draft.tex
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.tex"
@@ -296,20 +296,20 @@ erence Rules
 \mpr@right=\box32
 )
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -327,7 +327,7 @@ LaTeX Font Info:    ... okay on input line 122.
 )
 \c@lstlisting=\count124
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 122.
+Package hyperref Info: Link coloring OFF on input line 123.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -336,19 +336,19 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.out")
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.out")
 \@outlinefile=\write3
-LaTeX Font Info:    Try loading font information for U+msa on input line 125.
+LaTeX Font Info:    Try loading font information for U+msa on input line 126.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 125.
+LaTeX Font Info:    Try loading font information for U+msb on input line 126.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -357,44 +357,45 @@ ap}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 \OT1/cmr/m/n/10 de-ter-min-is-tic se-man-tics sim-pli-fies com-pos-ing,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 153--154
+Underfull \hbox (badness 3189) in paragraph at lines 154--155
 \OT1/cmr/m/n/10 to-wards de-ter-min-is-tic by con-struc-tion par-al-lel
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
 
-Underfull \hbox (badness 1460) in paragraph at lines 161--163
+Underfull \hbox (badness 1460) in paragraph at lines 162--164
 \OT1/cmr/m/n/10 A com-mon theme that emerges in the study
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 161--163
-\OT1/cmr/m/n/10 of deterministic-by-construction sys-tems is the
+Underfull \hbox (badness 2343) in paragraph at lines 162--164
+\OT1/cmr/m/n/10 of \OT1/cmr/m/it/10 deterministic-by-construction sys-tems \OT1
+/cmr/m/n/10 is the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 \OT1/cmr/bx/it/10 Motivating Ex-am-ple \OT1/cmr/m/n/10 Con-sider ap-pli-ca-tion
 s
  []
@@ -433,25 +434,25 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <Figures/lattice.jpg, id=56, 701.62125pt x 331.99031pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [3] <Figures/lattice.jpg, id=61, 701.62125pt x 331.99031pt>
 File: Figures/lattice.jpg Graphic file (type jpg)
 
 <use Figures/lattice.jpg>
-Package pdftex.def Info: Figures/lattice.jpg used on input line 194.
+Package pdftex.def Info: Figures/lattice.jpg used on input line 200.
 (pdftex.def)             Requested size: 222.0pt x 105.04353pt.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 206--212
 
  []
@@ -625,11 +626,6 @@ on in-side LVish
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 295--298
-\OT1/cmr/m/n/10 li-brary does this, and thereby guar-an-tees full
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
@@ -665,6 +661,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--313
  []
 
 
+Underfull \hbox (badness 1939) in paragraph at lines 306--313
+\OT1/cmr/m/n/10 In or-der to spec-ify the type of LVar ef-fects
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
@@ -676,7 +677,17 @@ Underfull \hbox (badness 1189) in paragraph at lines 327--329
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 338--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
@@ -684,26 +695,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--370
 File: Figures/speedup.jpg Graphic file (type jpg)
 
 <use Figures/speedup.jpg>
-Package pdftex.def Info: Figures/speedup.jpg used on input line 383.
+Package pdftex.def Info: Figures/speedup.jpg used on input line 381.
 (pdftex.def)             Requested size: 222.0pt x 131.15509pt.
 
-Underfull \hbox (badness 2165) in paragraph at lines 376--387
-\OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vide a hi-er-ar-chy
+Underfull \hbox (badness 1371) in paragraph at lines 375--385
+\OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vides a hi-er-ar-chy
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 376--387
+Underfull \hbox (badness 1694) in paragraph at lines 375--385
 \OT1/cmr/m/n/10 data for LVish im-ple-men-ta-tion us-ing lock-free
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--387
+Underfull \hbox (badness 10000) in paragraph at lines 375--385
 
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 376--387
-\OT1/cmr/m/n/10 con-sis-tency is a pol-icy in which the up-dates
+Underfull \hbox (badness 1377) in paragraph at lines 375--385
+\OT1/cmr/bx/it/10 even-tu-ally \OT1/cmr/m/n/10 reach the repli-cas, that need n
+ot
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 375--385
+\OT1/cmr/m/n/10 CvRDTs al-low in-con-sis-tent in-ter-me-di-ate states
  []
 
 [9] ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.bbl"
@@ -716,26 +733,28 @@ Underfull \hbox (badness 1859) in paragraph at lines 36--40
 []\OT1/cmr/m/n/10 Praveen Narayanan and Ryan R. New-ton.
  []
 
+[10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>]
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
- [10 <C:/Users/Nishanth Nagendra/Documents/GitHub/Personal/Figures/speedup.jpg>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+ [11
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 396.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: 60D886FF1525121D336830D3150786E0;318.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
- 7424 strings out of 493921
- 105934 string characters out of 3147245
+ 7426 strings out of 493921
+ 105959 string characters out of 3147245
  197727 words of memory out of 3000000
- 10607 multiletter control sequences out of 15000+200000
+ 10608 multiletter control sequences out of 15000+200000
  13847 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,17n,32p,1373b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,17n,32p,1290b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
@@ -751,9 +770,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt9.pfb>
-Output written on draft.pdf (10 pages, 357546 bytes).
+Output written on draft.pdf (11 pages, 358408 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
