@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  9 JAN 2015 22:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.21)  10 JAN 2015 20:16
 entering extended mode
 **draft.tex
 ("C:\Users\Nishanth Nagendra\Documents\GitHub\Personal\draft.tex"
@@ -661,9 +661,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 324--325
-\OT1/cmr/m/n/10 are el-e-ments not equal to $\OMS/cmsy/m/n/10 ?$ \OT1/cmr/m/n/1
-0 but whose only
+Underfull \hbox (badness 2302) in paragraph at lines 324--325
+\OT1/cmr/m/n/10 and most application-specific lat-tices used by
  []
 
 
@@ -681,17 +680,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
-<Figures/speedup.jpg, id=114, 505.89pt x 298.86656pt>
+<Figures/speedup.jpg, id=115, 505.89pt x 298.86656pt>
 File: Figures/speedup.jpg Graphic file (type jpg)
 
 <use Figures/speedup.jpg>
 Package pdftex.def Info: Figures/speedup.jpg used on input line 377.
 (pdftex.def)             Requested size: 222.0pt x 131.15509pt.
-
-Underfull \hbox (badness 1371) in paragraph at lines 371--381
-\OT1/cmr/m/n/10 im-ple-men-ta-tion. K-CFA pro-vides a hi-er-ar-chy
- []
-
 
 Underfull \hbox (badness 1694) in paragraph at lines 371--381
 \OT1/cmr/m/n/10 data for LVish im-ple-men-ta-tion us-ing lock-free
@@ -767,9 +761,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt9.pfb>
-Output written on draft.pdf (10 pages, 357997 bytes).
+Output written on draft.pdf (10 pages, 358309 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
